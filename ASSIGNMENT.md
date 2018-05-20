@@ -1,3 +1,10 @@
+.__   __.   ______       _______  _______     ___      .______      
+|  \ |  |  /  __  \     |   ____||   ____|   /   \     |   _  \     
+|   \|  | |  |  |  |    |  |__   |  |__     /  ^  \    |  |_)  |    
+|  . `  | |  |  |  |    |   __|  |   __|   /  /_\  \   |      /      (･_･)  
+|  |\   | |  `--'  |    |  |     |  |____ /  _____  \  |  |\  \----. (っ/  
+|__| \__|  \______/     |__|     |_______/__/     \__\ | _| `._____| Lﾉ┘   
+
 ##  Introduction
 The purpose of this exercise is for the developer to exhibit his familiarity with frontend technologies, 
 programming patterns and to provide with a sample of what clean and reusable code means to the candidate.

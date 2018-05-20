@@ -1,19 +1,4 @@
-.App {
-  text-align: center;
+.champions-list{
+  max-width: 1400px;
+  margin: auto;
 }
-
-.App-header {
-  background-color: #222;
-  height: 100px;
-  padding: 20px;
-  color: white;
-}
-
-.App-title {
-  font-size: 1.5em;
-}
-
-.App-intro {
-  font-size: large;
-}
-
