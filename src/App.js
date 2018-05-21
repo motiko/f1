@@ -37,7 +37,7 @@ class App extends Component {
               icon={<Image src="f1-logo.png" size="thumb" className="icon" />}
             />
           </Header>
-          <Box className="champions-list">
+          <Box className="main-content">
             <Route
               exact
               path="/"

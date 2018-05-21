@@ -27,8 +27,7 @@ function raceWinners(season) {
         nationality: driver.nationality,
         number: driver.permanentNumber,
         laps: race.laps,
-        fastestLapSpeed: fastestLap.AverageSpeed.speed,
-        fastestLapTime: fastestLap.Time.time,
+        fastestLap: fastestLap ? {speed: fastestLap.AverageSpeed.speed, time:fastestLap.Time.time  }: undefined,
       }
     })
   })
