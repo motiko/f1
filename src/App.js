@@ -35,7 +35,7 @@ class App extends Component {
   render() {
     const {champions, error} = this.state
     return (
-      <Router>
+      <Router basename={process.env.PUBLIC_URL}>
         <GrommetApp inline={true} centered={false}>
           {error && (
             <Toast status="critical">Connection error:{error}. Please try again. </Toast>

@@ -1,5 +1,7 @@
 image: node:7.9.0 # change to match your node version
 
+variables:
+    PUBLIC_URL: "/f1" 
 cache:
   paths:
     - node_modules/
