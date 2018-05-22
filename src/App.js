@@ -42,7 +42,7 @@ class App extends Component {
           )}
           <Header pad={{horizontal: 'medium'}}>
             <Anchor
-              href="/"
+              href={process.env.PUBLIC_URL + "/"}
               label="Epic Races"
               icon={<Image src="f1-logo.png" size="thumb" className="icon" />}
               data-cy="app-logo"
