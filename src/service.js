@@ -1,4 +1,4 @@
-const baseUrl = 'http://ergast.com/api/f1/'
+const baseUrl = 'https://ergast.com/api/f1/'
 
 /**
  * Send GET request to Ergast API. Requset and parse JSON content. Caches results in localStorage.
@@ -101,7 +101,7 @@ function raceImages(races) {
   const encodedNames = races.map(r => encodeURIComponent(r.name)).join('|')
   const imageSize = 300
   return fetch(
-    `http://en.wikipedia.org/w/api.php?action=query&format=json&origin=*&prop=pageimages&pithumbsize=${imageSize}&titles=${encodedNames}`,
+    `https://en.wikipedia.org/w/api.php?action=query&format=json&origin=*&prop=pageimages&pithumbsize=${imageSize}&titles=${encodedNames}`,
   )
     .then(results => results.json())
     .then(results => {
