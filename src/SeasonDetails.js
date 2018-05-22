@@ -1,11 +1,11 @@
 import React, {Component} from 'react'
-import Race from './Race'
+import RaceSummary from './RaceSummary'
 import Tiles from 'grommet/components/Tiles'
 import Service from './service'
 import PropTypes from 'prop-types'
 import Toast from 'grommet/components/Toast'
 
-class SeasonResults extends Component {
+class SeasonDetails extends Component {
   static propTypes = {
     champions: PropTypes.array,
     season: PropTypes.string,
@@ -39,7 +39,7 @@ class SeasonResults extends Component {
         )}
         <Tiles flush={false} size="medium" justify="start">
           {races.map(race => (
-            <Race
+            <RaceSummary
               key={race.round}
               race={race}
               championsRace={seasonWinner && seasonWinner.id === race.winnerId}
@@ -52,4 +52,4 @@ class SeasonResults extends Component {
   }
 }
 
-export default SeasonResults
+export default SeasonDetails

@@ -14,7 +14,7 @@ import Footer from 'grommet/components/Footer'
 import Label from 'grommet/components/Label'
 import Home from './Home'
 import {BrowserRouter as Router, Route} from 'react-router-dom'
-import SeasonResults from './SeasonResults'
+import SeasonDetails from './SeasonDetails'
 import Toast from 'grommet/components/Toast'
 
 class App extends Component {
@@ -59,7 +59,7 @@ class App extends Component {
               path={`/:season`}
               render={props => {
                 return (
-                  <SeasonResults
+                  <SeasonDetails
                     season={props.match.params.season}
                     champions={champions}
                   />

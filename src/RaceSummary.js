@@ -7,7 +7,7 @@ import Card from 'grommet/components/Card'
 import Tile from 'grommet/components/Tile'
 import Label from 'grommet/components/Label'
 
-export default function Race({race, championsRace, imageSrc}) {
+export default function RaceSummary({race, championsRace, imageSrc}) {
   return (
     <Tile
       margin="large"

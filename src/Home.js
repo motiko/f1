@@ -3,7 +3,7 @@ import Hero from 'grommet/components/Hero'
 import Image from 'grommet/components/Image'
 import Box from 'grommet/components/Box'
 import Tiles from 'grommet/components/Tiles'
-import Champion from './Champion'
+import SeasonSummary from './SeasonSummary'
 import Card from 'grommet/components/Card'
 
 export default function Home({history, champions}) {
@@ -32,7 +32,7 @@ export default function Home({history, champions}) {
         justify="start"
         onSelect={() => {}}>
         {champions.map(champion => (
-          <Champion
+          <SeasonSummary
             champion={champion}
             history={history}
             key={champion.season}

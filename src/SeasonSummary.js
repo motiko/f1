@@ -7,7 +7,7 @@ import FlagIcon from 'grommet/components/icons/base/Flag'
 import Box from 'grommet/components/Box'
 import Value from 'grommet/components/Value'
 
-export default function Champion({champion,history}) {
+export default function SeasonSummary({champion,history}) {
   return (
     <Tile
       onClick={() => {
@@ -45,7 +45,7 @@ export default function Champion({champion,history}) {
             href={`/${champion.season}`}
             icon={<FlagIcon />}
             primary={true}
-            label="See All Races"
+            label="Races"
           />
         }
       />
