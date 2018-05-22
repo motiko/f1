@@ -1,4 +1,4 @@
-import React, {Component} from 'react'
+import React from 'react'
 import ClockIcon from 'grommet/components/icons/base/Clock'
 import TrophyIcon from 'grommet/components/icons/base/Trophy'
 import Image from 'grommet/components/Image'
@@ -10,7 +10,6 @@ import Label from 'grommet/components/Label'
 export default function Race({race, championsRace, imageSrc}) {
   return (
     <Tile
-      key={race.round}
       margin="large"
       colorIndex="light-2"
       style={{

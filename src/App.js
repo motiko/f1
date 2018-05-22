@@ -15,21 +15,31 @@ import Label from 'grommet/components/Label'
 import Home from './Home'
 import {BrowserRouter as Router, Route} from 'react-router-dom'
 import SeasonResults from './SeasonResults'
+import Toast from 'grommet/components/Toast'
 
 class App extends Component {
   state = {
     champions: [],
+    error: null,
   }
   componentDidMount() {
-    Service.champions(2005, 2015).then(result => {
-      this.setState({champions: result})
-    })
+    Service.champions(2005, 2015)
+      .then(result => {
+        this.setState({champions: result})
+      })
+      .catch(error => {
+        this.setState({error:error.message})
+      })
   }
+
   render() {
-    const {champions} = this.state
+    const {champions, error} = this.state
     return (
       <Router>
         <GrommetApp inline={true} centered={false}>
+          {error && (
+            <Toast status="critical">Connection error:{error}. Please try again. </Toast>
+          )}
           <Header pad={{horizontal: 'medium'}}>
             <Anchor
               href="/"
@@ -41,12 +51,20 @@ class App extends Component {
             <Route
               exact
               path="/"
-              render={(props) => <Home champions={champions} history={props.history}/>}
+              render={props => (
+                <Home champions={champions} history={props.history} />
+              )}
             />
             <Route
               path={`/:season`}
-              render={(props) => {
-                return <SeasonResults season={props.match.params.season} champions={champions} /> }}
+              render={props => {
+                return (
+                  <SeasonResults
+                    season={props.match.params.season}
+                    champions={champions}
+                  />
+                )
+              }}
             />
           </Box>
           <Footer
