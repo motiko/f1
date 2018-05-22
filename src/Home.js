@@ -1,4 +1,4 @@
-import React, {Component} from 'react'
+import React from 'react'
 import Hero from 'grommet/components/Hero'
 import Image from 'grommet/components/Image'
 import Box from 'grommet/components/Box'

@@ -10,11 +10,11 @@ import Label from 'grommet/components/Label'
 export default function RaceSummary({race, championsRace, imageSrc}) {
   return (
     <Tile
+  data-cy="race-tile"
       margin="large"
       colorIndex="light-2"
       style={{
-        background:
-          championsRace ? ' #daf1fb' : '',
+        background: championsRace ? ' #daf1fb' : '',
       }}>
       <Card
         contentPad="medium"
@@ -26,10 +26,9 @@ export default function RaceSummary({race, championsRace, imageSrc}) {
             <Value
               value={race.winnerName}
               label="Winner"
-              trendIcon={
-                championsRace && <TrophyIcon />
-              }
+              trendIcon={championsRace && <TrophyIcon />}
               align="start"
+              data-cy={championsRace ? 'champions-race' : ''}
             />
             {race.fastestLap && (
               <React.Fragment>

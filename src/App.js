@@ -45,6 +45,7 @@ class App extends Component {
               href="/"
               label="Epic Races"
               icon={<Image src="f1-logo.png" size="thumb" className="icon" />}
+              data-cy="app-logo"
             />
           </Header>
           <Box className="main-content">

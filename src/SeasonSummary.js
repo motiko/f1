@@ -25,18 +25,20 @@ export default function SeasonSummary({champion,history}) {
             label="Champion"
             align="start"
             trendIcon={<TrophyIcon className="icon" />}
+            data-cy="champion-name"
           />
         }
         description={
           <Box direction="row" pad={{between: 'medium'}} margin="medium">
             <Box>
               {' '}
-              <Value value={champion.wins} label="Wins" />
+              <Value value={champion.wins} label="Wins"  data-cy="champion-wins"/>
             </Box>
             <Box>
               {' '}
-              <Value value={champion.points} label="Points" align="end" />
-            </Box>
+              <Value value={champion.points} label="Points" align="end" data-cy="champion-points"
+ />
+                        </Box>
           </Box>
         }
         label={`Season ${champion.season}`}
