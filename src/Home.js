@@ -17,7 +17,7 @@ export default function Home({history, champions}) {
           <Box basis="1/2" align="end" pad="large">
             <Box colorIndex="grey-2-a">
               <Card
-                thumbnail="F1-logo.png"
+                thumbnail="f1-logo.png"
                 heading="Champions"
                 description="Historic race results "
               />
