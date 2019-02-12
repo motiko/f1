@@ -1,6 +1,6 @@
 # F1
 
-Fetching Formula 1 rece resutls from Ergast API.
+Fetching Formula 1 race resutls from Ergast API.
 Fetching race images from wikipedia API.
 Displaying each year winners and results.
 
