@@ -1,5 +1,9 @@
 # F1
 
+Fetching Formula 1 rece resutls from Ergast API.
+Fetching race images from wikipedia API.
+Displaying each year winners and results.
+
 ## Build
 Clone repository and run (or equivalent commands with yarn):
 ```
